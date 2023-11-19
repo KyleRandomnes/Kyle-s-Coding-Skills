@@ -2,7 +2,7 @@ import pyttsx3
 from docx import Document
 
 # Open the Word document
-document_path = "The Panda and the Magical Taxi.docx"
+document_path = "TestDoc.docx"
 doc = Document(document_path)
 
 # Initialize the text-to-speech engine

@@ -3,7 +3,7 @@ import random
 
 #global vars
 Angle = 0
-total_height = 0;
+total_height = 0
 my_angles_list = [45, 55, 65, 75, 85, 95, 105, 115, 125]
 my_colors_list = [
     "orange", "yellow", "green", "blue", "purple",

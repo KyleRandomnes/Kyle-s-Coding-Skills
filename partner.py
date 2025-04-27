@@ -1,8 +1,10 @@
 def calculate_new_hours(current_average, hours_streamed, new_viewers, new_average):
-    # Solve for new hours
-    new_hours = ((current_average * hours_streamed) - (new_average * hours_streamed)) / (new_average - new_viewers)
+    if new_average == new_viewers:
+        raise ValueError("New average and new viewers cannot be the same — division by zero.")
     
+    new_hours = hours_streamed * (current_average - new_average) / (new_average - new_viewers)
     return new_hours
+
 
 # Example inputs
 current_average = float(input("Enter current average viewers: "))
